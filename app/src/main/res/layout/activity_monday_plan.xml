@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Monday_plan">
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#f1c40e"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/button"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:background="@drawable/menu_2_line"
+            android:padding="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Week 1 -Day 1" />
+
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topBar"
+        android:background="#000000">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="11dp"
+            android:background="@drawable/rounded_task"
+            android:padding="20dp">
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="1dp"
+                app:srcCompat="@drawable/best_muscle" />
+
+            <View
+                android:id="@+id/whiteLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_below="@+id/imageView3"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/whiteLine"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/path_693" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/whiteLine"
+                android:layout_marginStart="229dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/appCompatButton"
+                android:background="@drawable/rounded_yellow_button"
+                android:text="Start" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/whiteLine"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/appCompatButton"
+                android:text="Mark as completed"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/imageView3"
+                android:text="Bench Press"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView18"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="7dp"
+                android:layout_toEndOf="@+id/imageView3"
+                android:text="Sets"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView19"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/imageView3"
+                android:text="Reps"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView20"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/imageView3"
+                android:text="Rest"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@+id/textView19"
+                android:text="3"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView22"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/textView20"
+                android:text="12-10-8"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView23"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/textView21"
+                android:text="30 Sec"
+                android:textColor="#ffffff"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:id="@+id/button32"
+                android:layout_width="6dp"
+                android:layout_height="12dp"
+                android:layout_alignParentTop="true"
+
+                android:layout_marginStart="71dp"
+                android:layout_marginTop="40.5dp"
+                android:layout_toEndOf="@+id/textView23"
+                android:background="@drawable/chevron_right__1_" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

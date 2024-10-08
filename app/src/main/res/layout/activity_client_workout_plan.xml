@@ -1,0 +1,452 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <!-- Top Bar (Workout Plan) -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f1c40e"
+        android:padding="10dp">
+
+        <!-- Hamburger Menu Icon -->
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_2_line"
+            android:contentDescription="Menu Icon" />
+
+        <!-- Title (Workout Plan) -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="37dp"
+            android:text="Workout Plan"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Image and Goals Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <!-- FrameLayout to stack the image and the text -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Image -->
+            <ImageView
+                android:id="@+id/transformation_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/hqdefault"
+                android:scaleType="centerCrop" />
+
+            <!-- Goal / Duration / Level overlay -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@drawable/half_rounded"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <!-- Goal -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Goal"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Muscle Building"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <!-- Duration -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Duration"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5 Weeks"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <!-- Level -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Beginner"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- Introduction Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Introduction"
+            android:textColor="#f1c40e"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+            <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chevron_right__1_"
+            android:contentDescription="Arrow Icon"
+                android:layout_marginStart="215dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is a beginner quick start guide that will move you from day 1 to day 60, providing you with training instructions."
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:paddingTop="5dp" />
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="30"
+            android:max="100"
+            android:progressTint="#4caf50"
+            android:layout_marginTop="10dp" />
+
+        <!-- Completion Percentage -->
+        <TextView
+            android:id="@+id/progress_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30% Complete"
+            android:textColor="#ffffff"
+            android:paddingTop="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/rounded_task"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- First row containing week number, title, and arrow icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Week number -->
+            <TextView
+                android:id="@+id/week_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01"
+                android:textColor="#f1c40e"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Week title -->
+            <TextView
+                android:id="@+id/week_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:text="Week"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Arrow icon -->
+            <ImageView
+                android:id="@+id/arrow_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Arrow Icon"
+                android:src="@drawable/chevron_right__1_"
+                android:layout_marginTop=""/>
+        </LinearLayout>
+
+        <!-- Week description -->
+        <TextView
+            android:id="@+id/week_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:text="This is a beginner quick start...."
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/rounded_task"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp">
+
+        <!-- First row containing week number, title, and arrow icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <!-- Week number -->
+            <TextView
+                android:id="@+id/week_number2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="02"
+                android:textColor="#f1c40e"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Week title -->
+            <TextView
+                android:id="@+id/week_title35"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:text="Week"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Arrow icon -->
+            <ImageView
+                android:id="@+id/arrow_icon5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chevron_right__1_"
+                android:contentDescription="Arrow Icon" />
+        </LinearLayout>
+
+        <!-- Week description -->
+        <TextView
+            android:id="@+id/week_description2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="This is a beginner quick start...."
+            android:layout_marginStart="35dp"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/rounded_task"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        >
+
+        <!-- First row containing week number, title, and arrow icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <!-- Week number -->
+            <TextView
+                android:id="@+id/week_number65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="03"
+                android:textColor="#f1c40e"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Week title -->
+            <TextView
+                android:id="@+id/week_title7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:text="Week"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Arrow icon -->
+            <ImageView
+                android:id="@+id/arrow_icon8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chevron_right__1_"
+                android:contentDescription="Arrow Icon" />
+        </LinearLayout>
+
+        <!-- Week description -->
+        <TextView
+            android:id="@+id/week_description98"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="This is a beginner quick start...."
+            android:layout_marginStart="35dp"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/rounded_task"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp">
+
+        <!-- First row containing week number, title, and arrow icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <!-- Week number -->
+            <TextView
+                android:id="@+id/week_number7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="04"
+                android:textColor="#f1c40e"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Week title -->
+            <TextView
+                android:id="@+id/week_title5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:text="Week"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Arrow icon -->
+            <ImageView
+                android:id="@+id/arrow_icon4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chevron_right__1_"
+                android:contentDescription="Arrow Icon" />
+        </LinearLayout>
+
+        <!-- Week description -->
+        <TextView
+            android:id="@+id/week_description0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="This is a beginner quick start...."
+            android:layout_marginStart="35dp"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Week List Section -->
+    <!-- Include your LinearLayout and RecyclerView here -->
+</LinearLayout>

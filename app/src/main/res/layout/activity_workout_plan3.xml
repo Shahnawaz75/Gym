@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Workout_Plan_3">
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#f1c40e"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/button"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:background="@drawable/menu_2_line"
+            android:padding="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Week 1 -Day 1" />
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topBar"
+        android:layout_marginTop="1dp"
+        android:background="#000000">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/start_restart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Start/Restart"
+                android:background="@drawable/rounded_yellow_button"
+                android:textColor="#000000"
+                android:layout_alignParentBottom="true"
+
+                android:layout_marginStart="50dp"
+                android:layout_centerHorizontal="false"/>
+
+            <!-- Stop Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="64dp"
+
+                android:background="@drawable/red_rounded_button"
+                android:text="Stop"
+                android:textColor="#FFFFFF" />
+
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="151dp"
+            android:layout_marginEnd="23dp"
+            android:backgroundTint="#000000"
+            android:text="Rest"
+            android:textColor="#ffffff" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="159dp"
+            android:backgroundTint="#000000"
+            android:text="Reception"
+            android:textColor="#ffffff" />
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="24dp"
+
+            >
+
+            <ProgressBar
+                android:id="@+id/pbTimer"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/gray_progress_bar"
+                android:indeterminate="false"
+                android:max="10"
+                android:progress="10"
+                android:progressDrawable="@drawable/blue_progress_bar"
+                android:rotation="-90" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="59dp"
+                android:text="30"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="24dp"
+
+            android:layout_marginRight="12dp">
+
+            <ProgressBar
+                android:id="@+id/pbTimer12"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/gray_progress_bar"
+                android:indeterminate="false"
+                android:max="10"
+                android:progress="10"
+                android:progressDrawable="@drawable/blue_progress_bar"
+                android:rotation="-90" />
+
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="55dp"
+                android:text="10"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/textView28"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="59dp"
+                android:layout_marginTop="2dp"
+                android:text="Sec"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="189dp"
+            android:layout_height="231dp"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="78dp"
+                android:layout_marginTop="86dp"
+                android:text="00.20"
+                android:textColor="#f5ee25" />
+
+            <ProgressBar
+
+                android:id="@+id/pbTimer122"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="181dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/gray_progress_bar"
+                android:indeterminate="false"
+                android:max="10"
+                android:progress="10"
+                android:progressDrawable="@drawable/yelolow_color_progree"
+                android:rotation="-90" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="114dp"
+                android:text="Reminig Time"
+                android:textColor="#f5ee25"
+                android:textSize="8dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="53dp"
+                android:layout_marginTop="181dp"
+                android:backgroundTint="#000000"
+                android:text="Set 1"
+                android:textColor="#f5ee25" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

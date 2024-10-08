@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Gym"
+        tools:targetApi="31">
+        <activity
+            android:name=".Client_Workout_intro"
+            android:exported="false" />
+        <activity
+            android:name=".Client_Workout_Plan"
+            android:exported="false" />
+        <activity
+            android:name=".check_workout"
+            android:exported="false" />
+        <activity
+            android:name=".client_home_check"
+            android:exported="false" />
+        <activity
+            android:name=".Workout_Plan_3"
+            android:exported="false" />
+        <activity
+            android:name=".Client_Chest_Detail"
+            android:exported="false" />
+        <activity
+            android:name=".Monday_plan"
+            android:exported="false" />
+        <activity
+            android:name=".Clinet_Week_Plan"
+            android:exported="false" />
+        <activity
+            android:name=".Client_Workout_Into"
+            android:exported="false" />
+        <activity
+            android:name=".Client_Home"
+            android:exported="false" />
+        <activity
+            android:name=".Splash5"
+            android:exported="false" />
+        <activity
+            android:name=".Splash4"
+            android:exported="false" />
+        <activity
+            android:name=".Splash3"
+            android:exported="false" />
+        <activity
+            android:name=".Splach2"
+            android:exported="false" />
+        <activity
+            android:name=".Splash"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash"
+    android:background="#000000">
+
+    <!-- ImageView centered horizontally, with a relative margin from the top -->
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="156dp"
+        android:layout_height="137dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_centerInParent="true"
+
+      app:srcCompat="@drawable/group_358"
+        />
+
+    <!-- TextView centered horizontally and aligned below ImageView -->
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView12"
+        android:layout_centerHorizontal="true"
+        android:text="G Y M"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+    android:textStyle="bold"
+    android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

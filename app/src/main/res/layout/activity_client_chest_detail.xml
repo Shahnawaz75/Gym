@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Client_Chest_Detail">
+
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#f1c40e"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/button"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:background="@drawable/arrow_left__2_"
+            android:padding="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Bench Press" />
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topBar"
+        android:background="#000000"
+        android:padding="16dp"
+        >
+        <!-- Image at the top -->
+        <ImageView
+            android:id="@+id/exerciseImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/old_bench"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Exercise Title -->
+        <TextView
+            android:id="@+id/exerciseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/exerciseImage"
+            android:text="Bench Press"
+            android:textColor="#F4C300"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Exercise Instructions -->
+        <TextView
+            android:id="@+id/exerciseInstructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/exerciseTitle"
+            android:text="1) Lie back on a flat bench. Using a medium width grip, lift the bar from the rack and hold it straight over you with your arms locked. This will be your starting position.\n\n2) From the starting position, breathe in and begin coming down slowly until the bar touches your middle chest.\n\n3) After a brief pause, push the bar back to the starting position as you breathe out."
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:textSize="14sp" />
+
+        <!-- Equipment Required -->
+        <TextView
+            android:id="@+id/equipmentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/exerciseInstructions"
+            android:text="Equipment Required"
+            android:textColor="#F4C300"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/equipmentList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/equipmentTitle"
+            android:text="Barbell, Bench, Plate, Lock"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:textSize="14sp" />
+
+        <!-- Target Muscle -->
+        <TextView
+            android:id="@+id/targetMuscleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/equipmentList"
+            android:text="Target Muscle"
+            android:textColor="#F4C300"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/targetMuscleList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/targetMuscleTitle"
+            android:text="Chest, Shoulder, Triceps"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:textSize="14sp" />
+
+        <!-- Start Workout Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/startWorkoutButton"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/targetMuscleList"
+            android:layout_marginTop="68dp"
+            android:background="@drawable/rounded_yellow_button"
+            android:text="Start Workout"
+            android:layout_alignParentRight="true"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
